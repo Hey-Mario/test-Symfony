@@ -2,12 +2,13 @@
 
 namespace App\Controller;
 
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 class VinylController{
 
     #[Route('/')]
     public function homepage(){
-        die("It's my first time using symfony madafaka");
+        return new Response('Something else for the test');
     }
 }
